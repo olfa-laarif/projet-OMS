@@ -1,0 +1,32 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "email": "test@marchand.com",
+  "password": "monSuperPassword123",
+  "name": "Ma Boutique"
+}
+
+###
+
+POST http://localhost:3000/external/orders
+Content-Type: application/json
+
+{
+  "amount": 99.99,
+  "merchantEmail": "test@marchand.com"
+}
+
+###
+
+POST http://localhost:3000/external/orders
+Content-Type: application/json
+
+{
+"amount": 99.99,
+"merchantEmail": "jean.senior@example.com"
+}
+
+###
+
+GET http://localhost:3000/merchants/69c1700786f167ae003711d4/orders
